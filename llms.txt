@@ -37,11 +37,11 @@ Contact (partnerships, enterprise pilots, investor conversations; investor mater
 
 ## Pages
 
-- [About](https://alexandragulamova.com/): bio, Savant.chat traction, press, FAQ, contact
-- [Blog](https://alexandragulamova.com/blog/): notes on AI-native security and building Savant.chat
-- [Media kit](https://alexandragulamova.com/media-kit.html): short bio, key facts, high-resolution photos
-- [AI-native security: how smart contract teams should build their security stack in 2026](https://alexandragulamova.com/blog/ai-native-security-stack-2026.html)
-- [An AI auditor in the top 6 at Sherlock: what it means for smart contract security](https://alexandragulamova.com/blog/ai-auditor-top-6-sherlock.html)
+- [About](https://lifeisasea.github.io/): bio, Savant.chat traction, press, FAQ, contact
+- [Blog](https://lifeisasea.github.io/blog/): notes on AI-native security and building Savant.chat
+- [Media kit](https://lifeisasea.github.io/media-kit.html): short bio, key facts, high-resolution photos
+- [AI-native security: how smart contract teams should build their security stack in 2026](https://lifeisasea.github.io/blog/ai-native-security-stack-2026.html)
+- [An AI auditor in the top 6 at Sherlock: what it means for smart contract security](https://lifeisasea.github.io/blog/ai-auditor-top-6-sherlock.html)
 
 ## Press
 
