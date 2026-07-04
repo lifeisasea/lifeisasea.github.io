@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-SITE_URL = "https://lifeisasea.github.io"
+SITE_URL = "https://alexandragulamova.com"
 MONTHS = ["January", "February", "March", "April", "May", "June",
           "July", "August", "September", "October", "November", "December"]
 

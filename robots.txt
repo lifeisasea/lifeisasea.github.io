@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lifeisasea.github.io/sitemap.xml
+Sitemap: https://alexandragulamova.com/sitemap.xml
