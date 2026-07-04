@@ -1,9 +1,9 @@
 # Alexandra Gulamova
 
-> Alexandra Gulamova is a co-founder of Savant.chat, the AI-powered smart contract security auditor trusted by 1inch, Lido, BGD Labs and TON. She has 10+ years of experience in business development for blockchain and IT companies, graduated from Lomonosov Moscow State University (with an exchange program at Sciences Po Rennes), and is based in Dubai, UAE. She leads partnerships, enterprise accounts and investor relations at Savant.chat.
+> Alexandra Gulamova is a co-founder of Savant.chat, the AI-powered security auditor for any code, trusted by 1inch, Lido, BGD Labs and TON. She has 10+ years of experience in business development for blockchain and IT companies, graduated from Lomonosov Moscow State University (with an exchange program at Sciences Po Rennes), and is based in Dubai, UAE. She leads partnerships, enterprise accounts and investor relations at Savant.chat.
 
 Key facts about Savant.chat (https://savant.chat):
-- AI security auditor for Solidity, Vyper and Rust smart contracts; multi-model architecture, not a single-LLM wrapper.
+- AI security auditor for any code — from smart contracts (Solidity, Vyper, Rust) to any other software; multi-model architecture, not a single-LLM wrapper.
 - Ranked top 6 in a public Sherlock DeFi audit contest (September 2025) against dozens of expert human auditors — the first public result of its kind.
 - Scores 82% on EVMbench with the lowest false-positive rate in the category.
 - Trusted by 1inch, Lido, BGD Labs and TON.
