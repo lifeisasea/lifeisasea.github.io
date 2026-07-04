@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-native security: how smart contract teams should build their security stack in 2026 — Alexandra Gulamova</title>
+<meta name="description" content="Stock LLMs, agent skills, specialized AI auditors and CI/CD integration — what each layer of a Web3 security stack actually gives you in 2026, and the deadly mistake of relying on any single one.">
+<link rel="canonical" href="https://alexandragulamova.com/blog/ai-native-security-stack-2026.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI-native security: how smart contract teams should build their security stack in 2026">
+<meta property="og:description" content="Stock LLMs, agent skills, specialized AI auditors and CI/CD integration — what each layer of a Web3 security stack actually gives you in 2026, and the deadly mistake of relying on any single one.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI-native security: how smart contract teams should build their security stack in 2026",
+  "datePublished": "2026-07-04",
+  "author": {
+    "@type": "Person",
+    "name": "Alexandra Gulamova",
+    "url": "https://alexandragulamova.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Savant.chat",
+    "url": "https://savant.chat"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Alexandra Gulamova</a>
+    <nav>
+      <a href="../index.html">About</a>
+      <a href="index.html" aria-current="page">Blog</a>
+      <a href="../media-kit.html">Media kit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <h1>AI-native security: how smart contract teams should build their security stack in 2026</h1>
+      <p class="meta">July 2026 · Alexandra Gulamova · based on my talk “AI-native security: new standards for secure smart contract development”</p>
+
+      <p>Attackers already use AI. The economics are brutally asymmetric: at a realistic vulnerability hit rate, scanning contracts is profitable for an attacker even on small exploits, while a single six-figure success funds tens of thousands of future scans. A defender paying for the same coverage out of bug bounties breaks even far later — if ever. In 2026, the question is not <em>whether</em> to add AI to your security process, but <em>how</em>.</p>
+
+      <h2>The options on the table</h2>
+
+      <h2>1. Stock LLMs</h2>
+
+      <p><strong>Pros:</strong> relatively cheap, and they give an illusion of being tailored to you — you can prompt them however you like.</p>
+
+      <p><strong>Cons:</strong> they cost you time, and the results are subjective: two engineers asking the same question get different answers, and neither is optimized for finding bugs.</p>
+
+      <h2>2. Agent skills on top of general models</h2>
+
+      <p><strong>Pros:</strong> noticeably deeper than a bare model, and less hand-holding than raw prompting.</p>
+
+      <p><strong>Cons:</strong> the underlying model still isn't optimized for vulnerability research, and part of its cognitive budget is spent deciding which tool to call rather than analyzing your code.</p>
+
+      <h2>3. Specialized AI auditors</h2>
+
+      <p>This is a category where you have to distinguish real tools from wrappers. A genuine AI auditor orchestrates thousands of parallel requests to Tier-1 models per audit — which is also why it cannot be cheap. What you buy is your team's time and focus: hypotheses generated, execution traced, false positives filtered before a human ever looks.</p>
+
+      <p>Personalized, self-built tooling has the opposite problem: a tool tuned by one engineer works for that one engineer, which is terrible for scaling a team, and nobody has spare time for full-scale R&amp;D on internal tooling. Universal tools are built by teams whose entire job is that research.</p>
+
+      <h2>4. CI/CD integration</h2>
+
+      <p>Security during code creation, not after it. Every pull request gets checked before it merges, so vulnerabilities are caught when they cost minutes to fix, not after deployment when they cost a protocol.</p>
+
+      <h2>The 2026 stack</h2>
+
+      <ul>
+        <li><strong>CI/CD checks</strong> on every change, continuously;</li>
+        <li><strong>an AI deep audit</strong> as preparation before the human audit — so humans spend their expensive hours on what only humans can find;</li>
+        <li><strong>a human audit</strong> before mainnet for high-value code.</li>
+      </ul>
+
+      <h2>The deadly mistakes</h2>
+
+      <ul>
+        <li><strong>Relying on any single method as the only one.</strong> Manual-only misses what machines catch at scale; AI-only misses what senior humans catch in novel designs.</li>
+        <li><strong>Using cheap AI tools.</strong> If the price doesn't cover serious compute, the analysis is surface-level by construction — and the false positives will cost you more than the subscription saves.</li>
+      </ul>
+
+      <blockquote>
+        <p>Security stopped being a one-time event years ago. In 2026 it is a pipeline — and AI is what makes the pipeline affordable.</p>
+      </blockquote>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    © 2026 Alexandra Gulamova · <a href="https://savant.chat">Savant.chat</a>
+  </div>
+</footer>
+
+</body>
+</html>

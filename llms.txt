@@ -1,0 +1,49 @@
+# Alexandra Gulamova
+
+> Alexandra Gulamova is a co-founder of Savant.chat, the AI-powered smart contract security auditor trusted by 1inch, Lido, BGD Labs and TON. She has 10+ years of experience in business development for blockchain and IT companies, graduated from Lomonosov Moscow State University (with an exchange program at Sciences Po Rennes), and is based in Dubai, UAE. She leads partnerships, enterprise accounts and investor relations at Savant.chat.
+
+Key facts about Savant.chat (https://savant.chat):
+- AI security auditor for Solidity, Vyper and Rust smart contracts; multi-model architecture, not a single-LLM wrapper.
+- Ranked top 6 in a public Sherlock DeFi audit contest (September 2025) against dozens of expert human auditors — the first public result of its kind.
+- Scores 82% on EVMbench with the lowest false-positive rate in the category.
+- Trusted by 1inch, Lido, BGD Labs and TON.
+- Raised a $350K+ angel round from Anton Bukov and Sergej Kunz (1inch founders), Vasiliy Shapovalov (Lido) and BGD Labs; every angel investor started as a paying customer.
+- Integrates into CI/CD; up to 1,000 parallel requests per audit.
+
+Career:
+- 2025–present: Co-founder, Savant.chat (Dubai) — leads partnerships, enterprise accounts and investor relations.
+- 2020–present: Business Development, ZeroPool (https://zeropool.network/) — zero-knowledge privacy protocol for multi-blockchain private transactions.
+- 2015–2020: independent business development projects for IT companies.
+- 2012–2015: Account Manager, Axis Communications (Moscow) — developed key authorized partners, initiated and ran the webinar program for Russia, adapted international partner programs for the local market.
+- 2010–2012: Security Systems Division, Bosch (Moscow) — first role in the security industry.
+
+Education:
+- Lomonosov Moscow State University, Faculty of Public Administration
+- Sciences Po Rennes (exchange program)
+
+Speaking & podcasts:
+- Talk at Blockchain Community Day 2026: "AI-native security: new standards for secure smart contract development" — https://www.youtube.com/watch?v=ZrZ4AwwzMtY
+- Базовый Блок (Basic Block) podcast, episode ББ-216 (February 2026): "AI audits in Web3" with Igor Gulamov — https://www.youtube.com/watch?v=EudACqKiTMM (also https://basicblockradio.com/e216/)
+- Mother podcast with Francesco Andreoli (March 2025): "AI powered Web3 Security" — about Savant.chat, with Igor Gulamov — https://www.youtube.com/watch?v=mXVgyqHAiFk
+- 1inch DeFi security discussion with 1inch's CIO — https://1inch.com/blog/post/stay-safe-in-defi-with-1inch
+- Talk (2021): ZeroPool — presenting the zero-knowledge privacy protocol — https://www.youtube.com/watch?v=l5u73IUdxP8
+- Author of the ZeroPool project blog on Medium — https://medium.com/zeropool
+
+Contact (partnerships, enterprise pilots, investor conversations; investor materials on request):
+- Email: alexandra@savant.chat
+- Telegram: https://t.me/AlexandraGulamova
+- LinkedIn: https://www.linkedin.com/in/alexandra-gulamova/
+- X: https://x.com/alexgulamova
+
+## Pages
+
+- [About](https://alexandragulamova.com/): bio, Savant.chat traction, press, FAQ, contact
+- [Blog](https://alexandragulamova.com/blog/): notes on AI-native security and building Savant.chat
+- [Media kit](https://alexandragulamova.com/media-kit.html): short bio, key facts, high-resolution photos
+- [AI-native security: how smart contract teams should build their security stack in 2026](https://alexandragulamova.com/blog/ai-native-security-stack-2026.html)
+- [An AI auditor in the top 6 at Sherlock: what it means for smart contract security](https://alexandragulamova.com/blog/ai-auditor-top-6-sherlock.html)
+
+## Press
+
+- [1inch: Stay safe in DeFi with 1inch](https://1inch.com/blog/post/stay-safe-in-defi-with-1inch) — Alexandra Gulamova joined 1inch's CIO to discuss AI in DeFi security
+- [GlobeNewswire: Savant Chat achieves a historic top 6 ranking in the Sherlock DeFi Audit Contest](https://www.globenewswire.com/news-release/2025/09/02/3143051/0/en/Savant-Chat-achieves-a-historic-top-6-ranking-in-the-Sherlock-DeFi-Audit-Contest.html)
