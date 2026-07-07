@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transcript: AI-powered Web3 Security — Mother podcast (2025) — Alexandra Gulamova</title>
+<meta name="description" content="Full transcript of the Mother podcast episode with Francesco Andreoli: Igor Gulamov and Alexandra Gulamova on building Savant.chat, an AI security auditor for smart contracts.">
+<link rel="canonical" href="https://alexandragulamova.com/talks/ai-powered-web3-security-mother-2025.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Transcript: AI-powered Web3 Security — Mother podcast (2025)">
+<meta property="og:description" content="Igor Gulamov and Alexandra Gulamova on building Savant.chat, with host Francesco Andreoli.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "AI powered Web3 Security /w Igor Gulamov",
+  "description": "Mother podcast episode: host Francesco Andreoli talks with Igor Gulamov and Alexandra Gulamova of Savant.chat about AI-powered smart contract security.",
+  "uploadDate": "2025-03-24",
+  "url": "https://www.youtube.com/watch?v=mXVgyqHAiFk",
+  "embedUrl": "https://www.youtube.com/embed/mXVgyqHAiFk",
+  "thumbnailUrl": "https://i.ytimg.com/vi/mXVgyqHAiFk/hqdefault.jpg",
+  "publisher": { "@type": "Organization", "name": "Mother" },
+  "actor": [
+    { "@type": "Person", "name": "Alexandra Gulamova", "url": "https://alexandragulamova.com/" },
+    { "@type": "Person", "name": "Igor Gulamov" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Alexandra Gulamova</a>
+    <nav>
+      <a href="../index.html">About</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="index.html" aria-current="page">Talks</a>
+      <a href="../media-kit.html">Media kit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <h1>AI-powered Web3 Security — Mother podcast</h1>
+      <p class="meta">Mother podcast with Francesco Andreoli · March 2025 · Igor Gulamov &amp; Alexandra Gulamova (Savant.chat)</p>
+
+      <div class="links" style="margin-bottom: 28px;">
+        <a href="https://www.youtube.com/watch?v=mXVgyqHAiFk">▶ Watch on YouTube</a>
+      </div>
+
+      <blockquote><p>Transcript lightly edited for readability. Timestamps link to the video. Published with attribution to Francesco Andreoli and the Mother community — thank you for having us!</p></blockquote>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=0s">[00:00]</a> Introductions</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=0s">[00:00]</a> <strong>Francesco:</strong> Welcome, welcome everybody — welcome to this Agent Intelligence session. We're exploring everything agents in Web3, speaking with awesome builders and thought leaders in the space. I'm Francesco, I'm contributing to Mother, and I'm also leading DevRel at Consensys. Today we're diving deep into the vision behind Savant Chat, and we're speaking with two awesome AI agent builders — welcome Alexandra, welcome Igor. It's an honor to have you guys. Do you want to quickly introduce yourselves?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=31s">[00:31]</a> <strong>Alexandra:</strong> Hi, thank you for the invitation, Francesco. We are building Savant Chat. We have experience in auditing, and we decided to make the process much smoother — we'll discuss the details further on. We see there are a lot of issues in the process right now, and we decided to make it easier both for auditors and for users — for DeFi builders. That's why we started building Savant Chat, which shows amazing results in our benchmarks.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=65s">[01:05]</a> <strong>Igor:</strong> Most of us have some riddles for AI, and when a new model is released, we ask it these riddles. I have experience in security audits, including hard things like zero knowledge, and I have some riddles of my own. Each time a new model was released, I asked these riddles — GPT-4, GPT-4o, o1. And when DeepSeek R1 was released, I asked my riddles and saw that it solves them, with only minor help on my side. That's why we started to build Savant Chat at the beginning of February. We see that it can solve complex things in smart contract security, and sometimes it surprises me.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=135s">[02:15]</a> The problem: making audits faster and more affordable</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=135s">[02:15]</a> <strong>Francesco:</strong> Yes — and it's especially difficult to surprise auditors in general, right? I think that's super interesting. Okay, so let's dive a little bit into the agent. What kind of problems were you initially trying to solve by building Savant?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=151s">[02:31]</a> <strong>Alexandra:</strong> As you know, the issues with bugs and black hat hackers arrive more and more on the market. The audit process — human audit — takes a lot of time and a lot of money, and not every team can afford it, especially at the early stage of a project, because it's costly. We decided to make it easier and built our AI agent. With the help of Savant Chat, every team can check their code, and auditors can make the process faster by running our agent first. It's good for the market, for auditors and for teams: auditors can save time on a project, and teams can check their code with Savant Chat first and then go to a human audit — so the process becomes safer and faster.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=224s">[03:44]</a> <strong>Igor:</strong> We see that this is now a kind of GPT-3.5 moment in smart contract security — the point where the technology becomes useful for practical cases. For now, it reaches the level of a middle human auditor — with a lot of false positives, with a lot of prompt engineering, with some filtering of noise by human auditors — but it can invent original ways to attack smart contracts, and it helps us protect these smart contracts from hackers. We can run it in a mode where it brings a lot of ideas and we need to check them manually, or we can filter out most of the false positives and then just read the report and fix things.</p>
+
+<p>I think that with the improvement of the next generations of AI models, our solution will become better. It's not just an interface to OpenAI — we use multiple LLMs, mostly DeepSeek. But now APIs of very good LLMs with good common-sense skills, like Grok 3, are coming, and we think the next versions will be much better.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=337s">[05:37]</a> Live demo of Savant Chat</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=337s">[05:37]</a> <strong>Francesco:</strong> Nice, sounds good — thanks so much for the clarification. Those are strong pain points, and on the auditing side there is a lot that needs to happen. So, to show all the other agent builders hearing us what the Savant agent is actually about — would you walk us through the agent's core functionality? Feel free to screen share, show the docs, the website, anything you feel clarifies things.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=368s">[06:08]</a> <strong>Alexandra:</strong> The process is very easy right now. I think Igor will show the details — while he starts sharing, I'll just say a few words. In general, you just upload your codebase, it scans the context and then produces a report. Depending on the scope, it can take from about 15–20 minutes up to 24 hours if it's a really big scope — for example, 8,000 lines takes about 24 hours.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=407s">[06:47]</a> <strong>Igor:</strong> I won't show the full cycle of how it works, but we can create a new audit and load a project here. We have scope tools — for example, we can load a single file.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=427s">[07:07]</a> <strong>Francesco:</strong> Sorry, Igor, are you screen sharing? I can't see it yet — try to do it again... There you are, I can see it now.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=438s">[07:18]</a> <strong>Igor:</strong> Okay, so from the beginning. Because our AI agent takes a long time to run, I won't show the full cycle, but here we can load something — it could be a zip archive or a single file. Here we can manage the scope; right now it's only one file. These are my audits — some are interrupted; that's not bugs, it's just interruptions for testing purposes.</p>
+
+<p>Here's how it works: we can load the report here and read it. This is a token with a vulnerability — the balances are cached here, and if "from" equals "to", then we overwrite it twice and can mint some money. The AI found this self-transfer vulnerability in the token. And we see zero false positives — it found only one issue, and it's a really critical one. I saw a token with this bug during my own practice a long time ago, back in 2018.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=542s">[09:02]</a> <strong>Alexandra:</strong> And we invite everyone to go through the process — we provide a welcome balance to every new user, so you can experience the whole process yourself.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=560s">[09:20]</a> <strong>Igor:</strong> And speaking about LLMs like o3-mini-high or o1-pro: if you put a full ERC-20 token contract with this issue into them, with very high probability they will not find this bug. So we prepare the scope where we look for the bug, apply special prompt engineering, do hypothesis generation, and then filter with a special critic agent — that's how we reach these results.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=605s">[10:05]</a> <strong>Francesco:</strong> Very cool. And how long does the audit process take compared to a manual audit? Is it something like 10, 15, 20 minutes — how does it work?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=621s">[10:21]</a> <strong>Igor:</strong> I think our results are more than 100 times faster than a human audit. For example, if we're speaking about a scope of 8,000 lines of code, a human audit of such a large scope takes about one or two months and several auditors. With limited resources, our agent spends about 24 hours — but if we rented multiple servers, the time could reach about 4 hours. It's possible; for that we would need about 50 Nvidia H200s. That's a very large amount of computation power, and these are expensive things.</p>
+
+<p>An 8,000-line human audit costs from $100,000 to $200,000–300,000. For Savant Chat it's only about $1 per line — and during this month we've made it 25 cents per line.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=740s">[12:20]</a> Background and key architecture decisions</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=740s">[12:20]</a> <strong>Francesco:</strong> Okay, very cool. So run me through your background, also on the agent side, and the process — what were the key technical decisions in your architecture, from the technical angle on the agent side? I think there are a lot of lessons learned here for other agent builders who want to hear your story.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=767s">[12:47]</a> <strong>Igor:</strong> You or me? Okay — our background is ZK, privacy, and some scalability things. From 2019 we worked on zk-SNARKs, and also on AI, because of this cryptography experience. Some projects came to us to check their cryptography, and the Solidity code related to that cryptography. When AI was released, we started using AI in the business processes inside our team, for development, and we also wrote some in-house AI agents for these purposes. But before modern reasoning models, it was very expensive and not very good at common sense. The situation changed in January 2025, and we started to build Savant Chat.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=864s">[14:24]</a> <strong>Francesco:</strong> Nice, okay. And what are the lessons learned — things where you'd say, "if I had to go back, I would do it differently," in terms of technical decisions or even frameworks? What would you say you learned?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=882s">[14:42]</a> <strong>Igor:</strong> Okay, so most AI agents currently are very fast and cheap things using Llama or some other very lightweight LLMs with super-fast tokens-per-second performance, and they run for maybe minutes. Our solution runs for up to tens of hours and is very highly parallelizable. Speaking about an audit of 8,000 lines of code — that's about 100 parallel processes running for 24 hours, with different stages. That's why we wrote our own engine for it: there are no agent engines on the market that make this kind of behavior easier, because it's a new experience for the industry — nobody had run AI agents with 100 parallel processes for 24 hours before.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=970s">[16:10]</a> <strong>Alexandra:</strong> Also, one main point is that we decided not to use static code analyzers, because we wanted to make it fully AI — to get an absolutely new approach and an absolutely new point of view on the codebase. And it delivers results: some of our users shared with us that they had gone through several human audits, then shared the same code with Savant Chat, and it provided an absolutely new point of view, with absolutely new bugs — even after human audits. Because humans more or less go the same way, and static analyzers also go the same way, while a fully AI approach provides a different point of view and highlights new potential bugs.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1025s">[17:05]</a> <strong>Igor:</strong> Yeah, some other AI auditor agents use Slither forks — they improve Slither and add an AI filter for the false positives in the output of that analyzer or fork. We are not going this way, because that approach doesn't scale. Our approach scales with the performance of LLMs: when next-generation LLMs are released, we just attach them to our engine and get better results. But if the hypothesis generator is a kind of static analyzer, then the engine is limited to the things that analyzer can find. Of course, future versions of such agents will show fewer false positives because of LLM progress, but I think the main value here is not low false positives — it's finding something complex and interesting.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1116s">[18:36]</a> Surprising findings and going closed-source</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1116s">[18:36]</a> <strong>Francesco:</strong> Okay, makes sense — sounds good. Anything that surprised you guys during development that you want to share?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1123s">[18:43]</a> <strong>Igor:</strong> Sure, a lot. For example, take a casino smart contract — it appears in a lot of CTFs. The standard way to hack a casino smart contract with predictable randomness is to write a smart contract that attacks it: it precomputes the randomness, and if it's a winning combination it plays, otherwise it doesn't play. But Savant Chat found another way: you take a flash loan from a flash loan contract and play. If you win, you can refund the flash loan; if you lose, the flash loan contract will revert everything. It's new, you see.</p>
+
+<p>And after that we decided to close the code and not make it open source. When we discussed it with five founders of different projects, they were so frightened — they said, "yeah, keep it closed, please don't open it."</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1203s">[20:03]</a> <strong>Francesco:</strong> Really? Okay, sounds good. What else — any specific frameworks you guys used for Savant, like Eliza or specific Python ones?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1216s">[20:16]</a> <strong>Igor:</strong> We're using the standard OpenAI library, and that's all.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1225s">[20:25]</a> One strong agent vs. multi-agent coordination</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1225s">[20:25]</a> <strong>Francesco:</strong> Nice. I'm curious what you think, especially on the auditing side, about agent-to-agent coordination. Do you feel your agent will actually work together with other smart contract auditing agents? How would that work — because there are no standards out there yet, right?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1248s">[20:48]</a> <strong>Igor:</strong> Yeah, currently there is a discussion — it's Nethermind's idea — to bring together all the AI agents, run them all, and then these agents will find something interesting. We think the right way is a different direction: it's better to spend all the computation resources on one AI agent. Why? Because we can make the reasoning chains longer. It's not like we get one audit, run another one next to it, and take the sum of these audits — instead, we make the chains of reasoning twice as long, take into account everything we found before, remove duplicate findings, and then get a better result.</p>
+
+<p>This idea with multiple AI agents works if we allow the agents to get input from other agents and run them one by one, so they can use knowledge from the other agents. But then we need some kind of protocol for them to interact, because some ideas are not good — for example, some ideas get filtered out by our critic agent, but another agent might keep working on these ideas again and again, and I think that's not efficient.</p>
+
+<p>At Savant Chat we think that all the resources available for an AI audit should be used in one agent, which can use maximal computation to reach the best results. Of course, different AI agents can be of different quality, but then the problem is about routing between these agents, not about running all of them. For example, the cost of our AI agent is from 2 to 10% of a human audit, so it's impossible to run 50 agents like Savant on the same smart contract. I think that if the company which needs the audit has some budget, the best way is to spend all this budget on AI inference in the one best AI agent — then the results will be the best.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1465s">[24:25]</a> <strong>Francesco:</strong> Nice, makes sense — definitely optimizing results. So you also believe in specialized agents versus all-in-one agents — especially on contract auditing, you want specialized, verticalized agents, right? That's definitely the way to go.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1487s">[24:47]</a> Roadmap: CI/CD, more languages, AI-generated code</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1487s">[24:47]</a> <strong>Francesco:</strong> Okay, sounds good. I think we're almost out of time, but give us a bit more context on what's next for Savant Chat. What's on your roadmap, how do you see the agent evolving, and what integrations are you planning — especially on the auditing side, are you planning to integrate with some of the providers? Because I feel there will need to be a trade-off between the agent auditing versus maybe an agency or a manual smart contract audit as a double check. How does that look? Run us through some of those points.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1527s">[25:27]</a> <strong>Igor:</strong> For now, it's a tool for human auditors, because we have some false positives. Why? Because if we filter them, with some small probability we'll filter out something useful. Most of our clients ask us to make audits with a lot of false positives but with the maximal number of real issues — so we calibrate our AI agent to find the maximum of real issues, with a number of false positives that humans can filter by spending some time.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1577s">[26:17]</a> <strong>—</strong> I think the main milestones for our roadmap are to make the process easier, and then to cover more programming languages, like Rust. I think those are the main milestones.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1600s">[26:40]</a> <strong>Igor:</strong> Yeah, so our team is now working on CI/CD integration via GitHub Actions. Our CI/CD audits will work more on the diffs of the codebase — taking the whole codebase into account as information, but using the diff part to check it more deeply. Another direction is working with documentation, and recovering documentation from the codebase, because it's very hard to understand large-scope smart contracts — we're working on that. And next, we're moving to multiple languages — the first is Rust — to support all of them, and to use more modern AI models.</p>
+
+<p>We think that in the future, with the next generation of AI, we can audit general-purpose codebases. This is very important for information security and for AI-generated code. We will attach it to something like Devin and check that the code generated by AI is safe to use. I think it's important to check AI-generated code, and I think in the future we can do it.</p>
+
+<h2><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1722s">[28:42]</a> How to try Savant Chat and closing</h2>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1722s">[28:42]</a> <strong>Francesco:</strong> Very cool, okay, sounds good. That's about it. For all the agent builders hearing us — how can they get in touch with you guys, or how can they try out Savant?</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1735s">[28:55]</a> <strong>Alexandra:</strong> It's absolutely possible on our website, savant.chat — there is a welcome balance, as I already said. Also, right now we have a promotion: if you are ready to wait some time for your audit to start, you can use a 75% discount. It means that, for example, you get your report not today but maybe tomorrow — it's not the audit process itself that's slower, it means the start of the audit will be postponed. And we are open to communication through our X — auditdb.io is our main project, you can connect with us there — and also on our website, savant.chat, there is a way to contact us through Telegram and email. We are open for communication.</p>
+
+<p><a class="tstamp" href="https://www.youtube.com/watch?v=mXVgyqHAiFk&amp;t=1788s">[29:48]</a> <strong>Francesco:</strong> Okay, sounds good — awesome. Alexandra, Igor, thank you so much. We will send some of the links to people here. It's been a pleasure — we definitely look forward to seeing more around Savant Chat, and to seeing you guys demoing in different places.</p>
+
+<p>For everybody listening — that's all for today's Agent Intelligence session. Again, thank you so much for presenting Savant, and thank you for showing up. I think we need more builders — strong builders — actually creating these agents, especially on the due diligence and auditing side; it's super valuable for people. Thanks everybody for watching the stream. If you have any agent or anything you're building, you can present it and post some of those links in the Mother-specific channel. Apart from that, I think we're good to go. Looking forward to seeing you guys, maybe back in Dubai next time — and if not, until then!</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    © 2026 Alexandra Gulamova · <a href="https://savant.chat">Savant.chat</a>
+  </div>
+</footer>
+
+</body>
+</html>

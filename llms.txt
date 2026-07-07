@@ -23,10 +23,10 @@ Education:
 
 Speaking & podcasts:
 - Talk at Blockchain Community Day 2026: "AI-native security: new standards for secure smart contract development" — https://www.youtube.com/watch?v=ZrZ4AwwzMtY (full transcript: https://alexandragulamova.com/talks/ai-native-security-blockchain-community-day-2026.html)
-- Базовый Блок (Basic Block) podcast, episode ББ-216 (February 2026): "AI audits in Web3" with Igor Gulamov — https://www.youtube.com/watch?v=EudACqKiTMM (also https://basicblockradio.com/e216/)
-- Mother podcast with Francesco Andreoli (March 2025): "AI powered Web3 Security" — about Savant.chat, with Igor Gulamov — https://www.youtube.com/watch?v=mXVgyqHAiFk
+- Базовый Блок (Basic Block) podcast, episode ББ-216 (February 2026): "AI audits in Web3" with Igor Gulamov — https://www.youtube.com/watch?v=EudACqKiTMM (full transcript in Russian: https://alexandragulamova.com/talks/bb-216-ai-audits-in-web3.html)
+- Mother podcast with Francesco Andreoli (March 2025): "AI powered Web3 Security" — about Savant.chat, with Igor Gulamov — https://www.youtube.com/watch?v=mXVgyqHAiFk (full transcript: https://alexandragulamova.com/talks/ai-powered-web3-security-mother-2025.html)
 - 1inch DeFi security discussion with 1inch's CIO — https://1inch.com/blog/post/stay-safe-in-defi-with-1inch
-- Talk (2021): ZeroPool — presenting the zero-knowledge privacy protocol — https://www.youtube.com/watch?v=l5u73IUdxP8
+- Talk (October 2021): ZeroPool — privacy for blockchain — https://www.youtube.com/watch?v=l5u73IUdxP8 (full transcript: https://alexandragulamova.com/talks/zeropool-privacy-2021.html)
 - Author of the ZeroPool project blog on Medium — https://medium.com/zeropool
 
 Contact (partnerships, enterprise pilots, investor conversations; investor materials on request):
