@@ -18,6 +18,7 @@ HEADER = """<header class="site">
     <nav>
       <a href="../index.html">About</a>
       <a href="index.html" aria-current="page">Blog</a>
+      <a href="../talks/index.html">Talks</a>
       <a href="../media-kit.html">Media kit</a>
     </nav>
   </div>
@@ -183,6 +184,11 @@ def build_sitemap(posts):
             (f"{SITE_URL}/media-kit.html", today),
             (f"{SITE_URL}/blog/", today)]
     urls += [(f"{SITE_URL}/blog/{slug}.html", meta["date"]) for meta, slug in posts]
+    talks_dir = ROOT / "talks"
+    if talks_dir.is_dir():
+        urls.append((f"{SITE_URL}/talks/", today))
+        urls += [(f"{SITE_URL}/talks/{f.name}", today)
+                 for f in sorted(talks_dir.glob("*.html")) if f.name != "index.html"]
     entries = "\n".join(
         f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{mod}</lastmod>\n  </url>"
         for loc, mod in urls)

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transcript: AI-native security — Blockchain Community Day 2026 — Alexandra Gulamova</title>
+<meta name="description" content="Full transcript of Alexandra Gulamova's talk at Blockchain Community Day 2026: why attackers already use AI, the broken economics of bug bounties, stock LLMs vs Claude Skills vs specialized AI auditors vs CI/CD, and the fatal mistakes of Web3 security in 2026.">
+<link rel="canonical" href="https://alexandragulamova.com/talks/ai-native-security-blockchain-community-day-2026.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Transcript: AI-native security — Blockchain Community Day 2026">
+<meta property="og:description" content="Full transcript of Alexandra Gulamova's conference talk on AI-native security for smart contracts, with Q&amp;A.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "AI-native security: new standards for secure smart contract development",
+  "description": "Talk by Alexandra Gulamova (co-founder, Savant.chat) at Blockchain Community Day 2026: how AI changes the smart contract threat landscape, the economics of blackhat scanning, the four flavors of AI in the audit pipeline, and the layered security stack for 2026.",
+  "uploadDate": "2026-06-17",
+  "url": "https://www.youtube.com/watch?v=ZrZ4AwwzMtY",
+  "embedUrl": "https://www.youtube.com/embed/ZrZ4AwwzMtY",
+  "thumbnailUrl": "https://i.ytimg.com/vi/ZrZ4AwwzMtY/hqdefault.jpg",
+  "publisher": { "@type": "Organization", "name": "Blockchain Professionals" },
+  "actor": {
+    "@type": "Person",
+    "name": "Alexandra Gulamova",
+    "url": "https://alexandragulamova.com/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Alexandra Gulamova</a>
+    <nav>
+      <a href="../index.html">About</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="index.html" aria-current="page">Talks</a>
+      <a href="../media-kit.html">Media kit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <h1>AI-native security: new standards for secure smart contract development</h1>
+      <p class="meta">Blockchain Community Day 2026 · June 2026 · Alexandra Gulamova, co-founder of Savant.chat</p>
+
+      <div class="links" style="margin-bottom: 28px;">
+        <a href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY">▶ Watch on YouTube</a>
+        <a href="../assets/talks/ai-native-security-savant-chat-2026.pdf">Slides (PDF)</a>
+      </div>
+
+      <blockquote><p>Transcript lightly edited for readability. Timestamps link the sections to the video.</p></blockquote>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=38s">[00:38]</a> Introduction</h2>
+      <p>Thank you — nice to be here. As was said in the opening, AI has become a standard part of our lives: our private life, our professional life, our workflows. Whether we like it or not, we have to live with it and work with it. Today I want to talk about how AI influences one of the most important and most sensitive parts of our life in blockchain — the security of our projects. And I will also talk about the other side of the Web3 security landscape, because it is not only defenders out there. There are also attackers, and they are an important part of our security life in Web3.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=104s">[01:44]</a> Web3 in 2026 — the crisis hasn't slowed down</h2>
+      <p>We all remember the difficult April 2026, when almost every other day we faced new hacks, new vulnerabilities, new kinds of crime in the Web3 landscape. I think we had never seen anything like it before, and as you can see from the figures, the trend keeps climbing.</p>
+      <p>Here is the important part of that trend. Before, attacks more or less resembled one another — you could see patterns repeating across different types of attacks. But starting from autumn 2025, we began to see attacks that were absolutely new: new ways of attacking, without any known patterns at all. Why? Because AI is developing. While defenders stay conservative and rely on traditional protection — high-quality security auditors, solid in-house security processes — AI is effectively working in cooperation with the attackers. Attackers have to be more flexible and faster, and they genuinely use this instrument. AI has an absolutely different perspective on code and absolutely different ways of attacking it. So we should keep in mind that the attackers are developing their instruments and their processes too.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=257s">[04:17]</a> The attackers' one disadvantage</h2>
+      <p>But there is good news for us: the only tools available to attackers are their own personal instruments, because no high-quality product on the market allows attackers to use it. At Savant Chat, for example, we have a strong pipeline specifically to keep attackers out — only defenders, auditors and developers are among our clients — and I believe the situation is the same in other serious projects. So attackers have to build their own tooling: research it, create it, maintain it. Even for a big team, that splits their attention. And that is good for us, because defenders and builders can concentrate on their security pipeline and on creating their product.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=332s">[05:32]</a> Personalized in-house setups vs universal tools</h2>
+      <p>If we compare a personalized in-house setup with a universal AI product: an in-house setup will always be shaped by the habits of its developers, by someone's personal style. It will never be as objective as a universal product. When we create our product, we account for different styles of development, different ways of writing code, different patterns — and we build a universal product that fits every need, because we spend all of our attention, all of our skills, our experience and our time staying at the top of the AI industry.</p>
+      <p>With attackers this is clear — they have no choice, they have to build their own. What really surprises me is that a lot of builders and auditors voluntarily follow the same path. They could use high-quality instruments — the expertise and experience of people who devote all their time and knowledge to creating protection tools — but they prefer to build their own. Keep in mind: it won't be as comprehensive, it won't be as objective, and it won't give you a hundred percent. And you spend time on it, losing opportunities in your main work — writing your code — while other teams that use ready-made instruments put all their time and expertise into their products. Your competitors never sleep. So keep in mind what is more important for you.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=488s">[08:08]</a> Whitehats vs the blackhat economy</h2>
+      <p>We should also think carefully about bug bounties. To escape their own blind spots, a lot of teams say: “I'll go to a bug bounty platform — many auditors will come, check my code, and surface weaknesses from different angles.” That can work. But we have to factor in AI.</p>
+      <p>Take a project holding six million dollars. If a blackhat spends $6K on inference to scan its code, and the attack works, he takes all six million. Even if he spends that across many projects, even at a 0.1% success rate, the math still works for him. A whitehat hacker has to spend the same amount on every codebase he checks — but only in one case does he get paid, and on bug bounty platforms that might be $60K or less. So the whitehat has to spend far more than he earns: he pays for inference on every project and gets a bounty from almost none of them. This economy no longer works, and it no longer provides an objective layer of defense. You need to rely on yourself and on your own pipeline.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=640s">[10:40]</a> The evolution of audit automation</h2>
+      <p>Let's look at how we got here. In 2015 it was manual review: we relied only on third-party auditors, we spent a lot of time and a lot of money, and it was the only way to raise the security level of a project. Later, static analyzers appeared on the market — the first step of automation. Protection became broader, easier for auditors to use, and developers could use these instruments during development as well. That was a big step. But everything changed in 2025, when AI tools and agents appeared on the market. They absolutely changed the game.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=727s">[12:07]</a> What's actually on the table in 2026</h2>
+      <p>AI is not just one instrument — it's not even one type of instrument. We can talk about stock LLMs, about Claude Skills, about specialized agents, or about CI/CD integration if you are really pro in your security process.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=756s">[12:36]</a> Stock LLMs</h2>
+      <p>This is the first step for everyone who wants to bring AI into their security pipeline — I think all of us have been there. You paste a prompt and get a result; then you prompt again. You spend that time on every audit, writing new prompts for every new project. It does give you some kind of AI perspective on your code, which is better than nothing. But you spend a lot of time and get an extremely suboptimal result.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=806s">[13:26]</a> Claude Skills and agent kits</h2>
+      <p>This is much better, because professionals have set it up for you — you just use it, and you don't spend as much time on every new audit. But keep in mind that underneath it is still a general LLM, and general LLMs can't work properly on security audits — they weren't created for security purposes. It is a generalist's perception of the code. It still produces a lot of false positives. But it is still better than a bare LLM.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=861s">[14:21]</a> Specialized AI security tools</h2>
+      <p>These are much better again, because they are created by professionals — and they are not a single LLM. Every model has weak and strong sides and its own specifics. In Savant Chat, a single audit can involve up to thousands of parallel requests to different LLMs. It is impossible to reproduce that by hand for one audit — you would spend all of your time and still not recreate the processes that run under the hood. And the result is better, because you are relying on a complex architecture fine-tuned for catching genuinely interesting bugs. We have found serious issues in code even after our clients had been to tier-1 auditors — not because tier-1 auditors work badly. Not at all: they are great professionals and they do their best. It is because AI has an absolutely different perspective on code, and we should always keep that in mind.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=974s">[16:14]</a> CI/CD integration</h2>
+      <p>And if you are really pro, you can bring CI/CD integration into your development process. You integrate it once, and you get the report while the code is being written. You fix things as you create them — not after the code is complete, when the issue is buried in the connections between different parts of the codebase. It is also much faster: you push a request and get a short report — even in your Telegram — within a few minutes, because each change is a small amount of code. You fix it as soon as possible. That is a new level of security for new projects.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=1039s">[17:19]</a> The ideal security stack in 2026</h2>
+      <p>So how does the ideal setup look in 2026? First, you use CI/CD — security travels with the code, and every part of the code is checked at every stage. Then, from time to time, you check the whole project with AI. Why do you need this if CI/CD already raised the bar during development? Because sometimes you need to look at the project as a whole — interesting things surface when a large amount of code is analyzed together. And of course, you go to human audit for major releases — that part works as it always did; human audits are still on the market and they are a different kind of security. You could skip a step, but if you go to a human audit, prepare for it with AI first. It helps the auditors too: auditors use tools like Savant Chat themselves — we have a lot of auditors among our clients.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=1142s">[19:02]</a> Fatal mistakes of Web3 security in 2026</h2>
+      <p><strong>Mistake one — treating a single layer as the whole answer.</strong> If you use CI/CD and decide you don't need the full AI audit or the human audit, you can be attacked — you have only one side of the defense. And human audit alone doesn't work either. We saw that just a few days ago with Zcash, where a vulnerability was found with a plain LLM — not even a professional instrument. We can be sure the Zcash team is extremely professional and had the best auditors the market can offer. It happened simply because AI has an absolutely different perception of code: it sees attack paths people don't, it is more objective, and it has no standard way of thinking — every time it is something new.</p>
+      <p><strong>Mistake two — trusting cheap AI tools</strong>, or believing that all AI instruments are the same. I often see teams go to a cheap AI tool that promises results in a few minutes: upload several thousand lines of code, see the result in ten minutes, at almost zero cost. And the result they get is, predictably, zero. Real analysis cannot be that cheap — as I said, we make up to thousands of requests to different tier-1 LLMs per audit; inference still costs money. And then those same people conclude that all AI instruments are equally useless and can't touch any code. That is not true — attackers use strong instruments. Yes, the attackers' tooling is weaker than the defenders' side, because they have to build it themselves — but it is still not a simple wrapper around a cheap LLM, which is what a lot of AI tools on the market are today. Trust only genuinely high-quality AI instruments.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=1339s">[22:19]</a> Closing</h2>
+      <p>Remember: build like attackers already have AI — because they do, they use it, and we see it on the market every day. Thank you, I'm ready to answer your questions.</p>
+
+      <h2><a class="tstamp" href="https://www.youtube.com/watch?v=ZrZ4AwwzMtY&amp;t=1354s">[22:34]</a> Q&amp;A</h2>
+      <p><strong>Q: Does your approach do multi-LLM voting or ensembling? How do you avoid correlated model mistakes?</strong></p>
+      <p>It is a complex architecture, and yes — we use different tier-1 LLMs. All of our researchers specialize in AI: they know each model's weak and strong sides, so they balance the models against each other. For example, one LLM generates a hypothesis and another criticizes it, in multiple cycles, each with a different perception of the code. So we balance the weaknesses and strengths of different tier-1 LLMs in our architecture — through prompting, and through each other.</p>
+      <p><strong>Q: How do you prevent leaking private code when using cloud AI security tools?</strong></p>
+      <p>A really good question — it is the most widespread concern. I would say it is much like the risk that appeared when we started using the internet: before, everything was private, on our own laptops and in our own papers; once we went online, leak risks appeared. The same applies here. On our side there is a strong architecture: we don't store anything as-is — we split the code — and we work with tier-1 LLM providers like Anthropic, OpenAI and Google, which provide their own layer of security against leaks.</p>
+      <p><strong>Q: What's the best workflow for auditors — AI first and then manual, or manual first and then AI?</strong></p>
+      <p>Among our clients, auditors use both. Personally, I think AI first and then manual is better. Our auditor clients often say that even AI false positives — which are useless information for developers — are very useful for auditors: they start digging around the false positive and find a real bug somewhere nearby. The other camp runs AI after their manual pass, and they say it gives them a fresh look at code they have read many times and might have started skimming. For me, AI first works better — but it depends on you.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    © 2026 Alexandra Gulamova · <a href="https://savant.chat">Savant.chat</a>
+  </div>
+</footer>
+
+</body>
+</html>

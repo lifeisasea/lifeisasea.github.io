@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alexandragulamova.com/</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-07</lastmod>
   </url>
   <url>
     <loc>https://alexandragulamova.com/media-kit.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-07</lastmod>
   </url>
   <url>
     <loc>https://alexandragulamova.com/blog/</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-07</lastmod>
   </url>
   <url>
     <loc>https://alexandragulamova.com/blog/ai-native-security-stack-2026.html</loc>
@@ -19,5 +19,13 @@
   <url>
     <loc>https://alexandragulamova.com/blog/ai-auditor-top-6-sherlock.html</loc>
     <lastmod>2025-09-02</lastmod>
+  </url>
+  <url>
+    <loc>https://alexandragulamova.com/talks/</loc>
+    <lastmod>2026-07-07</lastmod>
+  </url>
+  <url>
+    <loc>https://alexandragulamova.com/talks/ai-native-security-blockchain-community-day-2026.html</loc>
+    <lastmod>2026-07-07</lastmod>
   </url>
 </urlset>

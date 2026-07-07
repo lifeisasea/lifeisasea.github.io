@@ -22,7 +22,7 @@ Education:
 - Sciences Po Rennes (exchange program)
 
 Speaking & podcasts:
-- Talk at Blockchain Community Day 2026: "AI-native security: new standards for secure smart contract development" — https://www.youtube.com/watch?v=ZrZ4AwwzMtY
+- Talk at Blockchain Community Day 2026: "AI-native security: new standards for secure smart contract development" — https://www.youtube.com/watch?v=ZrZ4AwwzMtY (full transcript: https://alexandragulamova.com/talks/ai-native-security-blockchain-community-day-2026.html)
 - Базовый Блок (Basic Block) podcast, episode ББ-216 (February 2026): "AI audits in Web3" with Igor Gulamov — https://www.youtube.com/watch?v=EudACqKiTMM (also https://basicblockradio.com/e216/)
 - Mother podcast with Francesco Andreoli (March 2025): "AI powered Web3 Security" — about Savant.chat, with Igor Gulamov — https://www.youtube.com/watch?v=mXVgyqHAiFk
 - 1inch DeFi security discussion with 1inch's CIO — https://1inch.com/blog/post/stay-safe-in-defi-with-1inch
@@ -39,6 +39,8 @@ Contact (partnerships, enterprise pilots, investor conversations; investor mater
 
 - [About](https://alexandragulamova.com/): bio, Savant.chat traction, press, FAQ, contact
 - [Blog](https://alexandragulamova.com/blog/): notes on AI-native security and building Savant.chat
+- [Talks & transcripts](https://alexandragulamova.com/talks/): conference talks and podcasts with full transcripts
+- [Transcript: AI-native security @ Blockchain Community Day 2026](https://alexandragulamova.com/talks/ai-native-security-blockchain-community-day-2026.html)
 - [Media kit](https://alexandragulamova.com/media-kit.html): short bio, key facts, high-resolution photos
 - [AI-native security: how smart contract teams should build their security stack in 2026](https://alexandragulamova.com/blog/ai-native-security-stack-2026.html)
 - [An AI auditor in the top 6 at Sherlock: what it means for smart contract security](https://alexandragulamova.com/blog/ai-auditor-top-6-sherlock.html)

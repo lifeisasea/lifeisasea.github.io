@@ -279,6 +279,15 @@ ul.facts strong { font-weight: 600; }
 
 .trusted strong { color: var(--text); font-weight: 600; }
 
+/* Transcript timestamps */
+.tstamp {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  margin-right: 8px;
+}
+
 /* Career timeline */
 ul.timeline {
   list-style: none;
